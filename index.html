@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="form">
+        <h2>Registration Form</h2>
+
+        <div class="grid">
+
+            <!-- Prefix -->
+            <select required>
+                <option value="">Prefix</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+            </select>
+
+            <!-- Name -->
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+
+            <!-- Gender -->
+            <select required>
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <!-- DOB & Age -->
+            <input type="date" id="dob" required>
+            <input type="number" id="age" placeholder="Age" readonly>
+
+            <!-- Username -->
+            <input type="text" placeholder="Username" required>
+
+            <!-- Password -->
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+            <!-- Phone -->
+            <input type="tel" id="phone" value="+91" required>
+
+            <!-- Email -->
+            <input type="email" id="email" placeholder="Email" required>
+
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+
+        <!-- Success UI -->
+        <div class="success-box" id="successBox">
+            <img id="successImg" src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="success">
+            <p>Registration Successful!</p>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
